@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Maps</title>
+    <link rel="stylesheet" href="map.css">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+  </head>
+  <body>
+  <input id="pac-input" class="controls" type="text" placeholder="Search Box">
+
+    <div id="floating-panel">
+    <b>Start: </b>
+    <select id="start">
+      <option value="mumbai cst, mumbai, mumbai">Mumbai CST</option>
+      <option value="delhi station, delhi, delhi">Delhi Station</option>
+    </select>
+    <b>End: </b>
+    <select id="end">
+      <option value="Kolkata">Kolkata</option>
+      <option value="Bangalore">Bangalore</option>
+    </select>
+    </div>
+    <div id="map"></div>
+    &nbsp;
+    <div id="warnings-panel"></div>
+
+    <script src="map.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCkUOdZ5y7hMm0yrcCQoCvLwzdM6M8s5qk&libraries=places&callback=initAutocomplete"
+         async defer></script>
+  </body>
+</html>
